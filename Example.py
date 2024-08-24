@@ -71,19 +71,7 @@ def hunting():                                  # function for manipulations wit
                 bot.send_message(TARGET_CHAT_ID, f"Captcha on the bot", message_thread_id=MESSAGE_THREAD_ID)
                 time.sleep(20)  # receiving the message from telegram bot about captcha window
             except pg.ImageNotFoundException:
-                pass
-            #while True:
-            #    pg.press('w', presses=5)  # after attacking the mob need to cast spell before battle downloaded
-            #    try:
-            #        pg.press('w', presses=15)  # if the mob is in front of a character using the spell
-            #        pg.keyDown('w')                 # need to hold the spell button down
-            #        pg.locateOnScreen('bot_appear.png', confidence=0.9)  # the mob in front of character
-            #        pg.press('2')                   # using an amplification from second pocket
-            #        pg.press('3')                   # using an amplification from second pocket
-            #        pg.keyDown('q')                 # using another spell to try to kill with oneshot
-            #        break
-            #    except pg.ImageNotFoundException:
-            #        pg.press('w', presses=15)  # if the mob is not in front of a character using the spell
+                pass       
             while True:
                 try:
                     pg.locateOnScreen('end.png', confidence=0.9)  # checking the end of battle
